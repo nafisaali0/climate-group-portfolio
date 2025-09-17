@@ -1,9 +1,12 @@
+import Hero from "../Components/Hero/Hero"
+import Navbar from "../Components/Navbar/Navbar"
 
 
 const Home = () => {
     return (
         <>
-            <h1 className="text-5xl text-black">Home</h1>
+            <Navbar/>
+            <Hero/>
         </>
     )
 }
