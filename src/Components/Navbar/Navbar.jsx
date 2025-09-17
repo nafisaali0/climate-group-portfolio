@@ -1,12 +1,20 @@
+import logo from "../../assets/logo-black-removebg.png"
 
 const Navbar = () => {
     return (
         <>
-            <div className="fixed top-0 z-50 w-full   backdrop-blur-sm">
+            <div className="fixed top-0 z-50 w-full backdrop-blur-sm">
                 <nav className="max-w-5xl mx-auto">
                     <div className="navbar">
                         <div className="navbar-start">
-                            <a href="#hero" className="text-xl">EcoNova</a>
+                            <a href="#hero" className="text-xl">
+                                <figure>
+                                    <img
+                                        src={logo}
+                                        alt=""
+                                        className="w-32 h-32" />
+                                </figure>
+                            </a>
                         </div>
                         <div className="navbar-end">
                             <div className="hidden lg:flex">
