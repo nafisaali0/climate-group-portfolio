@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <>
             {/*  backdrop-blur-sm */}
-            <div className="fixed top-0 z-50 w-full">
+            <div className="fixed top-0 z-50 w-full backdrop-blur-md">
                 <nav className="max-w-[1300px] mx-auto">
                     <div className="navbar">
                         <div className="navbar-start">
