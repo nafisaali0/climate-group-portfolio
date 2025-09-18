@@ -1,32 +1,18 @@
 import Spline from '@splinetool/react-spline';
-// import noise from '../../assets/background/bg_0.svg'
-import noise_2 from '../../assets/background/bg_1.svg'
+import noise from '../../assets/background/bg_1.svg'
 
 
 const Hero = () => {
     return (
         <>
-            <section id='#hero' className="relative h-screen flex justify-center items-center bg-[linear-gradient(to_bottom,#00bf8f_0%,#001510_100%)],#001510_100%)] p-5"
+            <section id='#hero' className="relative h-screen flex justify-center items-center bg-[radial-gradient(circle,#00bf8f_0%,#001510_100%)] p-5"
                 style={{
-                    background: 'linear-gradient(to bottom, #001510 0%, #00bf8f 100%)',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: 'cover',
+                    backgroundImage: `url(${noise})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "right top",
+                    backgroundSize: "cover",
+                    backgroundAttachment: "fixed"
                 }}
-            //bg-[radial-gradient(circle,#00bf8f_0%,#001510_100%)]
-            // style={{
-            //     backgroundImage: `url(${noise}), url(${noise_2})`,
-            //     backgroundRepeat: "no-repeat, no-repeat",
-            //     backgroundPosition: "top, right top",
-            //     backgroundSize: "cover, cover",
-            //     backgroundAttachment: "fixed, fixed", // ✅ Parallax effect for backgrounds
-            // }}
-            // style={{
-            //     backgroundImage: `url(${noise_2})`,
-            //     backgroundRepeat: "no-repeat",
-            //     backgroundPosition: "right top",
-            //     backgroundSize: "cover",
-            //     backgroundAttachment: "fixed"
-            // }}
             >
                 {/* Spline Animation */}
                 <div className="absolute inset-0 z-0 lg:w-full">

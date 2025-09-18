@@ -1,7 +1,8 @@
 const membersInfo = [
   {
     name: "Nafisa Ali",
-    education: "BSc in Computer Science, UITS",
+    image:"/src/assets/members/nafisa.png",
+    education: "BSc in Computer Science Engineering, UITS",
     linkedin: "https://www.linkedin.com/in/ali-nafisa",
     facebook: "https://www.facebook.com/nafisa.ali",
     github: "https://github.com/nafisaali0",
@@ -9,13 +10,15 @@ const membersInfo = [
   },
   {
     name: "Saif Izlal",
+    image:"/src/assets/members/saifizlal.jpg",
     education:"Dept. of Agricultural construction and environmental engineering, SAU",
     linkedin: "https://www.linkedin.com/in/saifrahman",
-    facebook: "https://www.facebook.com/saif.rahman",
+    facebook: "https://www.facebook.com/saif.izlal",
     researchGate: "https://example.com/saif-paper.pdf",
   },
   {
     name: "Fahim Mahafuz Ruhad",
+    image:"/src/assets/members/fahim_1.png",
     education:"Dept. of Agricultural construction and environmental engineering, SAU",
     linkedin: "https://www.linkedin.com/in/fahimhasan",
     facebook: "https://www.facebook.com/fahim.hasan",
@@ -23,6 +26,7 @@ const membersInfo = [
   },
   {
     name: "Asrafuzzaman Arif ",
+    image:"/src/assets/members/arif.png",
     education:"Dept. of Agricultural construction and environmental engineering, SAU",
     linkedin: "https://www.linkedin.com/in/arifhossain",
     facebook: "https://www.facebook.com/arif.hossain",
@@ -30,6 +34,7 @@ const membersInfo = [
   },
   {
     name: "Shahidur Rahman",
+    image:"/src/assets/members/ShahidurRahman.png",
     education:"Dept. of Agricultural construction and environmental engineering, SAU",
     linkedin: "https://www.linkedin.com/in/shaidurrahman",
     facebook: "https://www.facebook.com/shaidur.rahman",
