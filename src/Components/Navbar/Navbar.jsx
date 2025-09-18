@@ -1,4 +1,4 @@
-import logo from "../../assets/logo-black-removebg.png"
+import logo from "../../assets/logo/logo_1-removebg.png"
 
 const Navbar = () => {
     return (
@@ -7,18 +7,18 @@ const Navbar = () => {
                 <nav className="max-w-5xl mx-auto">
                     <div className="navbar">
                         <div className="navbar-start">
-                            <a href="#hero" className="text-xl">
+                            <a href="#hero">
                                 <figure>
                                     <img
                                         src={logo}
-                                        alt=""
+                                        alt="logo"
                                         className="w-32 h-32" />
                                 </figure>
                             </a>
                         </div>
                         <div className="navbar-end">
                             <div className="hidden lg:flex">
-                                <ul className="menu menu-horizontal px-1">
+                                <ul className="menu menu-horizontal px-1 text-xl font-medium">
                                     <li><a href="#home">Home</a></li>
                                     <li><a href="#projects">Projects</a></li>
                                     <li><a href="#members">Members</a></li>
