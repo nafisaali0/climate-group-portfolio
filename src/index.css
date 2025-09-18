@@ -3,11 +3,10 @@
 @tailwind utilities;
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Lora", serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color:#001510;
+  background-color: #001510;
   color: white;
 }
-

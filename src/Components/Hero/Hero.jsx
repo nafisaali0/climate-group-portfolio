@@ -28,15 +28,14 @@ const Hero = () => {
 
                 {/* Text */}
                 <div className="relative z-10 text-center max-w-3xl mt-32">
-                    <h1 className="text-9xl font-bold tracking-tighter bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(83,168,182,1))] text-transparent bg-clip-text">
+                    <h1 className="text-8xl lg:text-9xl font-bold tracking-tighter bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(83,168,182,1))] text-transparent bg-clip-text">
                         EcoNova
                     </h1>
-                    <p className='text-lg font-semibold mt-7 mb-10'>
+                    <p className='text-md lg:text-lg font-semibold mt-7 mb-10'>
                         Youth innovation for green futures.
                         We are a youth-driven team harnessing the power of AI and sustainable technologies to design intelligent solutions for climate resilience. Our mission is to create scalable innovations that protect ecosystems, empower communities, and shape a sustainable future for generations to come.
                     </p>
-                    <button className='px-10 py-5 rounded-xl bg-gradient-to-b from-white to-[#53a8b6] shadow-[2px_4px_12px_#53a8b6] text-black font-semibold text-2xl'><a href="#projects">See Projects</a></button>
-                    {/* <button className='px-10 py-5 rounded-xl bg-[#53a8b6] text-white font-bold text-xl mr-3'><a href="#projects">See Projects</a></button> */}
+                    <button className='px-10 py-5 rounded-xl bg-gradient-to-b from-white to-[#53a8b6] shadow-[2px_4px_12px_#53a8b6] text-black font-semibold text-xl lg:text-2xl'><a href="#projects">See Projects</a></button>
                 </div>
             </section>
         </>

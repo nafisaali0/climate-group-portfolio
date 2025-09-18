@@ -8,9 +8,9 @@ const Home = () => {
         <>
             <Navbar />
             <Hero />
-            {/* <div> */}
+            <div className="my-20">
                 <GroupMembers />
-            {/* </div> */}
+            </div>
         </>
     )
 }
