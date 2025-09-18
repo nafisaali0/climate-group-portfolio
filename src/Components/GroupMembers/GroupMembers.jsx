@@ -8,29 +8,30 @@ import { RiGlobalLine } from "react-icons/ri"
 const GroupMembers = () => {
     return (
         <>
-            <div className="py-20 max-w-[1300px] mx-auto p-5">
-                <h1 className="text-5xl font-bold">Team Members</h1>
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-16">
+            <div id="members" className="py-20 max-w-[1300px] mx-auto p-5">
+                <h1 className="text-3xl font-bold">Team Members</h1>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-10">
                     {
                         membersInfo?.map((member, index) => (
                             <>
-                                <div key={index} className="card bg-dark_green rounded-3xl shadow-sm hover:shadow-xl backdrop-blur-xl">
+                                {/* new check */}
+                                <div key={index} className="card space-y-1 bg-dark_green hover:shadow-xl">
                                     <figure>
                                         <img
-                                            src={member.image}
-                                            alt="Shoes"
+                                            src={member?.image}
+                                            alt="blog"
                                             className="w-full h-[400px] overflow-hidden object-cover" />
                                     </figure>
-                                    <div className="card-body">
-                                        <h2 className="text-lg font-bold">{member.name}</h2>
-                                        <h2 className="text-md font-medium">{member.education}</h2>
-                                        <div className="card-actions justify-end">
+                                    <div className="p-5">
+                                        <h1 className="font-bold text-md">{member?.name}</h1>
+                                        <p className="mb-2 text-sm font-medium">{member?.education}</p>
+                                        <div className="card-actions justify-end pt-2">
                                             <a
                                                 href={member?.linkedin}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                             >
-                                                <ImLinkedin size={29} color="#fff" />
+                                                <ImLinkedin size={28} color="#fff" />
                                             </a>
                                             {
                                                 member?.github ?

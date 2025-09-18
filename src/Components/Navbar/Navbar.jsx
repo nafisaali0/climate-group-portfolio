@@ -3,13 +3,12 @@ import logo from "../../assets/logo/logo_1-removebg.png"
 const Navbar = () => {
     return (
         <>
-            {/*  backdrop-blur-sm */}
             <div className="fixed top-0 z-50 w-full backdrop-blur-md">
                 <nav className="max-w-[1300px] mx-auto">
                     <div className="navbar">
                         <div className="navbar-start">
                             <a href="#hero">
-                                <figure  className="w-20 md:w-20 lg:w-24">
+                                <figure  className="w-16">
                                     <img
                                         src={logo}
                                         alt="logo" />
@@ -18,11 +17,10 @@ const Navbar = () => {
                         </div>
                         <div className="navbar-end">
                             <div className="hidden lg:flex">
-                                <ul className="menu menu-horizontal px-1 text-xl">
+                                <ul className="menu menu-horizontal px-1 text-md">
                                     <li><a href="#home">Home</a></li>
+                                    <li><a href="#members">Members</a></li>                                    
                                     <li><a href="#projects">Projects</a></li>
-                                    <li><a href="#members">Members</a></li>
-                                    <li><a href="#about">About</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>
@@ -34,11 +32,10 @@ const Navbar = () => {
                                 </div>
                                 <ul
                                     tabIndex={0}
-                                    className="menu menu-sm dropdown-content bg-[#001510] rounded-box z-1 mt-3 w-52 p-2 shadow flex items-center text-xl">
+                                    className="menu menu-sm dropdown-content bg-dark_green  backdrop-blur-md rounded-box z-1 mt-5 w-52 p-2 shadow flex items-center text-md">
                                     <li><a href="#home">Home</a></li>
+                                    <li><a href="#members">Members</a></li>                                    
                                     <li><a href="#projects">Projects</a></li>
-                                    <li><a href="#members">Members</a></li>
-                                    <li><a href="#about">About</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>
