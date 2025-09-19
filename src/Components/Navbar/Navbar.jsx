@@ -7,13 +7,14 @@ const Navbar = () => {
                 <nav className="max-w-[1300px] mx-auto">
                     <div className="navbar">
                         <div className="navbar-start">
-                            <a href="#hero">
-                                <figure className="w-16">
+                            <figure className="w-16">
+                                <a href="#home">
                                     <img
                                         src={logo}
                                         alt="logo" />
-                                </figure>
-                            </a>
+
+                                </a>
+                            </figure>
                         </div>
                         <div className="navbar-end">
                             <div className="hidden lg:flex">
@@ -41,8 +42,8 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                </nav>
-            </div>
+                </nav >
+            </div >
         </>
     )
 }
