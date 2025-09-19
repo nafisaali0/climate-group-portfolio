@@ -1,7 +1,7 @@
 const membersInfo = [
   {
     name: "Nafisa Ali",
-    image:"/src/assets/members/nafisa.png",
+    image:"https://i.ibb.co.com/LDB1GTPw/nafisa.png",
     education: "BSc in Computer Science Engineering, UITS",
     linkedin: "https://www.linkedin.com/in/ali-nafisa",
     facebook: "https://www.facebook.com/nafisa.ali",
@@ -10,7 +10,7 @@ const membersInfo = [
   },
   {
     name: "Saif Izlal",
-    image:"/src/assets/members/saifizlal.jpg",
+    image:"https://i.ibb.co.com/j9pGXQTM/saifizlal.jpg",
     education:"Dept. of Agricultural construction and environmental engineering, SAU",
     linkedin: "https://www.linkedin.com/in/saifizlal/",
     facebook: "https://www.facebook.com/saif.izlal",
@@ -18,7 +18,7 @@ const membersInfo = [
   },
   {
     name: "Fahim Mahafuz Ruhad",
-    image:"/src/assets/members/fahim_1.png",
+    image:"https://i.ibb.co.com/FLQ5htJw/fahim-1.png",
     education:"Dept. of Agricultural construction and environmental engineering, SAU",
     linkedin: "https://www.linkedin.com/in/ruhad46/",
     facebook: "https://www.facebook.com/Fahim.Ruhad",
@@ -26,7 +26,7 @@ const membersInfo = [
   },
   {
     name: "Asrafuzzaman Arif ",
-    image:"/src/assets/members/arif.png",
+    image:"https://i.ibb.co.com/HfpJ0qmK/arif.png",
     education:"Dept. of Agricultural construction and environmental engineering, SAU",
     linkedin: "https://www.linkedin.com/in/asrafuzzaman-arif-886728173/",
     facebook: "https://www.facebook.com/Asrafuzzaman.Arif68",
@@ -34,7 +34,7 @@ const membersInfo = [
   },
   {
     name: "Shahidur Rahman",
-    image:"/src/assets/members/ShahidurRahman.png",
+    image:"https://i.ibb.co.com/21L3xBPj/Shahidur-Rahman.png",
     education:"Dept. of Agricultural construction and environmental engineering, SAU",
     linkedin: "https://www.linkedin.com/in/shahidur-rahman-86b4731b3/",
     facebook: "https://www.facebook.com/shahidurrahman.a",
