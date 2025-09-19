@@ -10,7 +10,7 @@ const membersInfo = [
   },
   {
     name: "Saif Izlal",
-    image:"https://i.ibb.co.com/j9pGXQTM/saifizlal.jpg",
+    image:"https://i.ibb.co.com/B58GYPYr/saif-Izlal.png",
     education:"Dept. of Agricultural construction and environmental engineering, SAU",
     linkedin: "https://www.linkedin.com/in/saifizlal/",
     facebook: "https://www.facebook.com/saif.izlal",
