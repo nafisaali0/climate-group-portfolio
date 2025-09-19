@@ -6,6 +6,7 @@ import Project from "../Components/Project/Project"
 
 
 const Home = () => {
+   
     return (
         <>
             <Navbar />

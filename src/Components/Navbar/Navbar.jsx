@@ -6,7 +6,9 @@ const Navbar = () => {
             <div className="fixed top-0 z-50 w-full backdrop-blur-md">
                 <nav className="max-w-[1300px] mx-auto">
                     <div className="navbar">
-                        <div className="navbar-start">
+                        <div
+                            data-aos="fade-right"
+                            className="navbar-start">
                             <figure className="w-16">
                                 <a href="#home">
                                     <img
@@ -17,7 +19,9 @@ const Navbar = () => {
                             </figure>
                         </div>
                         <div className="navbar-end">
-                            <div className="hidden lg:flex">
+                            <div
+                                data-aos="fade-left"
+                                className="hidden lg:flex">
                                 <ul className="menu menu-horizontal px-1 text-md">
                                     <li><a href="#home">Home</a></li>
                                     <li><a href="#projects">Projects</a></li>
