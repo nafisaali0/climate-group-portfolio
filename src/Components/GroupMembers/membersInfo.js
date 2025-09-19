@@ -26,7 +26,7 @@ const membersInfo = [
   },
   {
     name: "Asrafuzzaman Arif ",
-    image:"https://i.ibb.co.com/HfpJ0qmK/arif.png",
+    image:"https://i.ibb.co.com/wNbbTj4S/arif.png",
     education:"Dept. of Agricultural construction and environmental engineering, SAU",
     linkedin: "https://www.linkedin.com/in/asrafuzzaman-arif-886728173/",
     facebook: "https://www.facebook.com/Asrafuzzaman.Arif68",
