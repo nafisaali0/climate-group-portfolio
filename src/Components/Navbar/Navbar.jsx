@@ -8,7 +8,7 @@ const Navbar = () => {
                     <div className="navbar">
                         <div className="navbar-start">
                             <a href="#hero">
-                                <figure  className="w-16">
+                                <figure className="w-16">
                                     <img
                                         src={logo}
                                         alt="logo" />
@@ -19,8 +19,8 @@ const Navbar = () => {
                             <div className="hidden lg:flex">
                                 <ul className="menu menu-horizontal px-1 text-md">
                                     <li><a href="#home">Home</a></li>
-                                    <li><a href="#members">Members</a></li>                                    
                                     <li><a href="#projects">Projects</a></li>
+                                    <li><a href="#members">Members</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>
@@ -34,8 +34,8 @@ const Navbar = () => {
                                     tabIndex={0}
                                     className="menu menu-sm dropdown-content bg-dark_green  backdrop-blur-md rounded-box z-1 mt-5 w-52 p-2 shadow flex items-center text-md">
                                     <li><a href="#home">Home</a></li>
-                                    <li><a href="#members">Members</a></li>                                    
                                     <li><a href="#projects">Projects</a></li>
+                                    <li><a href="#members">Members</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>

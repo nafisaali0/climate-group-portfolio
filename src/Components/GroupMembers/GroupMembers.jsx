@@ -8,14 +8,14 @@ import { RiGlobalLine } from "react-icons/ri"
 const GroupMembers = () => {
     return (
         <>
-            <div id="members" className="py-20 max-w-[1300px] mx-auto p-5">
+            <div id="members" className="pt-20 pb-7 max-w-[1300px] mx-auto p-5">
                 <h1 className="text-3xl font-bold">Team Members</h1>
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-7">
                     {
                         membersInfo?.map((member, index) => (
                             <>
                                 {/* new check */}
-                                <div key={index} className="card space-y-1 bg-dark_green hover:shadow-xl">
+                                <div key={index} className="card space-y-1 bg-dark_green rounded-3xl hover:shadow-xl">
                                     <figure>
                                         <img
                                             src={member?.image}
@@ -24,7 +24,7 @@ const GroupMembers = () => {
                                     </figure>
                                     <div className="p-5">
                                         <h1 className="font-bold text-md">{member?.name}</h1>
-                                        <p className="mb-2 text-sm font-medium">{member?.education}</p>
+                                        <h1 className="mb-2 text-sm font-medium">{member?.education}</h1>
                                         <div className="card-actions justify-end pt-2">
                                             <a
                                                 href={member?.linkedin}

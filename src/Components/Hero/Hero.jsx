@@ -28,7 +28,12 @@ const Hero = () => {
                         Youth innovation for green futures.
                         We are a youth-driven team harnessing the power of AI and sustainable technologies to design intelligent solutions for climate resilience. Our mission is to create scalable innovations that protect ecosystems, empower communities, and shape a sustainable future for generations to come.
                     </p>
-                    <button className='p-5 rounded-xl bg-gradient-to-b from-gray-300 to-[#53a8b6] shadow-[2px_4px_12px_#53a8b6] text-white font-medium text-md'><a href="projects">See Projects</a></button>
+                    {/* <button className='p-5 rounded-xl bg-gradient-to-b from-gray-300 to-[#53a8b6] shadow-[2px_4px_12px_#53a8b6] text-white font-medium text-md'><a href="projects">See Projects</a></button> */}
+
+                    {/* new */}
+                    <div className='flex justify-center items-center'>
+                        <button className='heroBtn'><a href="#projects">See Projects</a></button>
+                    </div>
                 </div>
             </section >
         </>

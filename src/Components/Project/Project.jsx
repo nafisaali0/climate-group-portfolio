@@ -5,11 +5,11 @@ import logo from "../../assets/logo/logo_1.png"
 const Project = () => {
     return (
         <>
-            <div id="projects" className="py-20 max-w-[1300px] mx-auto p-5">
-                <h1 className="text-3xl font-bold">Team Members</h1>
+            <div id="projects" className="pt-20 pb-7 max-w-[1300px] mx-auto px-5">
+                <h1 className="text-3xl font-bold">Projects</h1>
 
                 {/* project */}
-                <div className="flex flex-col gap-5 flex-wrap mt-10">
+                <div className="flex flex-col gap-5 flex-wrap mt-7">
 
                     <div
                         className="w-full bg-dark_green rounded-xl py-3 px-5"
@@ -28,8 +28,8 @@ const Project = () => {
                                         <h3 className="flex items-center gap-1 text-xs font-medium text-textSmallGray">
                                             <BiSolidCategory
                                                 title="category"
-                                                className="text-textSmallGray"
-                                                style={{ width: "15px", height: "15px" }}
+                                                className="text-white"
+                                                style={{ width: "12px", height: "12px" }}
                                             />
                                             <span>none</span>
                                         </h3>
@@ -41,7 +41,12 @@ const Project = () => {
                                     </div>
                                 </div>
                             </div>
-                            <button className='px-3 py-4 rounded-xl hover:border hover:border-button_color font-semibold text-sm lg:text-md'><a href="#projects">See Project</a></button>
+                            {/* <button className='px-3 py-4 rounded-xl hover:border hover:border-button_color font-semibold text-sm lg:text-md'><a href="#projects">See Project</a></button> */}
+
+                            {/* new */}
+                            <button className="projectBtn">
+                                <span>See Project</span>
+                            </button>
                         </div>
                     </div>
                 </div>
