@@ -15,12 +15,15 @@ const Hero = () => {
                 }}
             >
                 {/* Spline Animation */}
-                <div className="absolute inset-0 z-0 lg:w-full">
+                <div
+                    data-aos="zoom-in"
+                    className="absolute inset-0 z-0 lg:w-full">
                     <Spline scene="https://prod.spline.design/iGIuaUCOI6vyxLgG/scene.splinecode" />
                 </div>
 
                 {/* Text */}
-                <div className="relative z-10 text-center max-w-3xl mt-32">
+                <div data-aos="fade-up"
+                    className="relative z-10 text-center max-w-3xl mt-32">
                     <h1 className="text-8xl font-bold tracking-tighter bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(83,168,182,1))] text-transparent bg-clip-text">
                         EcoNova
                     </h1>

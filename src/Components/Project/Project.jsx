@@ -7,14 +7,18 @@ const Project = () => {
     return (
         <>
             <div id="projects" className="pt-20 pb-7 max-w-[1300px] mx-auto px-5">
-                <h1 className="text-3xl font-bold">Projects</h1>
+                <h1
+                    data-aos="fade-down"
+                    className="text-3xl font-bold">Projects</h1>
 
                 {/* project */}
                 <div className="flex flex-col gap-5 flex-wrap mt-7">
                     {
                         projectInfo?.map((project, index) =>
                             <>
-                                <div key={index}
+                                <div
+                                    data-aos="fade-right"
+                                    key={index}
                                     className="w-full bg-dark_green rounded-xl py-3 px-5"
                                 >
                                     <div className="flex items-center justify-between py-3">

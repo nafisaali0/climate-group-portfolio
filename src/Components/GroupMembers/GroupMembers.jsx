@@ -9,13 +9,18 @@ const GroupMembers = () => {
     return (
         <>
             <div id="members" className="pt-20 pb-7 max-w-[1300px] mx-auto p-5">
-                <h1 className="text-3xl font-bold">Team Members</h1>
+                <h1
+                    data-aos="fade-down"
+                    className="text-3xl font-bold">Team Members</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-7">
                     {
                         membersInfo?.map((member, index) => (
                             <>
                                 {/* new check */}
-                                <div key={index} className="card space-y-1 bg-dark_green rounded-3xl hover:shadow-xl">
+                                <div
+                                    data-aos="fade-left"
+                                    key={index}
+                                    className="card space-y-1 bg-dark_green rounded-3xl hover:shadow-xl">
                                     <figure>
                                         <img
                                             src={member?.image}
