@@ -1,5 +1,4 @@
 import { BiSolidCategory } from "react-icons/bi"
-import logo from "../../assets/logo/logo_1.png"
 import projectInfo from "./projectInfo"
 
 
@@ -27,7 +26,7 @@ const Project = () => {
                                                 <div className="w-auto">
                                                     <div className="avatar">
                                                         <div className="w-16 rounded-xl border border-dark_green">
-                                                            <img src={logo} />
+                                                            <img src={project?.image} />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -35,25 +34,49 @@ const Project = () => {
                                                     <h3 className="flex items-center gap-1 text-xs font-medium text-textSmallGray">
                                                         <BiSolidCategory
                                                             title="category"
-                                                            className="text-white"
+                                                            className="text-gray-400"
                                                             style={{ width: "12px", height: "12px" }}
                                                         />
-                                                        <span>none</span>
+                                                        <span className="text-gray-400">{project?.category}</span>
                                                     </h3>
-                                                    <a title="See Details" href="">
-                                                        <h2 className="text-sm font-semibold">
-                                                            {project.name}
-                                                        </h2>
-                                                    </a>
+                                                    {
+                                                        project?.link ?
+                                                            <>
+                                                                <a title="See Details" href={project?.link}>
+                                                                    <h2 className="text-base font-semibold my-1">
+                                                                        {project?.title}
+                                                                    </h2>
+                                                                </a>
+                                                            </>
+                                                            :
+                                                            <>
+                                                                <h2 className="text-base font-semibold my-1">
+                                                                    {project?.title}
+                                                                </h2>
+                                                            </>
+                                                    }
+                                                    <p className="text-base text-gray-400">
+                                                        {project?.description}
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
                                         {/* <button className='px-3 py-4 rounded-xl hover:border hover:border-button_color font-semibold text-sm lg:text-md'><a href="#projects">See Project</a></button> */}
 
                                         {/* new */}
-                                        <button className="projectBtn">
-                                            <span>See Project</span>
-                                        </button>
+                                        {
+                                            project?.link ?
+                                                <>
+                                                    <a href={project?.link}>
+                                                        <button className="projectBtn">
+                                                            <span>See Project</span>
+                                                        </button>
+                                                    </a>
+                                                </>
+                                                :
+                                                <></>
+                                        }
+
                                     </div>
                                 </div>
                             </>
