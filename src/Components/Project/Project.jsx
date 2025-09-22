@@ -42,7 +42,7 @@ const Project = () => {
                                                     {
                                                         project?.link ?
                                                             <>
-                                                                <a title="See Details" href={project?.link}>
+                                                                <a title="See Details" href={project?.link} target="_blank">
                                                                     <h2 className="text-base font-semibold my-1">
                                                                         {project?.title}
                                                                     </h2>
@@ -61,13 +61,12 @@ const Project = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* <button className='px-3 py-4 rounded-xl hover:border hover:border-button_color font-semibold text-sm lg:text-md'><a href="#projects">See Project</a></button> */}
 
                                         {/* new */}
                                         {
                                             project?.link ?
                                                 <>
-                                                    <a href={project?.link}>
+                                                    <a href={project?.link} target="_blank">
                                                         <button className="projectBtn">
                                                             <span>See Project</span>
                                                         </button>

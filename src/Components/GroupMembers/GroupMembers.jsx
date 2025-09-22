@@ -16,7 +16,6 @@ const GroupMembers = () => {
                     {
                         membersInfo?.map((member, index) => (
                             <>
-                                {/* new check */}
                                 <div
                                     data-aos="fade-left"
                                     key={index}
@@ -30,58 +29,56 @@ const GroupMembers = () => {
                                     <div className="p-5">
                                         <h1 className="font-bold text-md">{member?.name}</h1>
                                         <h1 className="mb-2 text-sm font-medium">{member?.education}</h1>
-                                        <div className="card-actions justify-end pt-2">
+                                        <div className="card-actions justify-end pt-2 text-white">
                                             <a
                                                 href={member?.linkedin}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
+                                                className="transition-all duration-300 hover:-translate-y-1"
                                             >
-                                                <ImLinkedin size={28} color="#fff" />
+                                                <ImLinkedin size={28} />
                                             </a>
-                                            {
-                                                member?.github ?
 
-                                                    <a
-                                                        href={member?.github}
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                    >
-                                                        <FaGithubSquare size={30} color="#fff" />
-                                                    </a>
-                                                    :
-                                                    ""
-                                            }
-                                            {
-                                                member?.portfolio ?
+                                            {member?.github && (
+                                                <a
+                                                    href={member?.github}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="transition-all duration-300 hover:-translate-y-1"
+                                                >
+                                                    <FaGithubSquare size={30} />
+                                                </a>
+                                            )}
 
-                                                    <a
-                                                        href={member?.portfolio}
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                    >
-                                                        <RiGlobalLine size={30} color="#fff" />
-                                                    </a>
-                                                    :
-                                                    ""
-                                            }
-                                            {
-                                                member?.researchGate ?
-                                                    <a
-                                                        href={member?.researchGate}
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                    >
-                                                        <FaResearchgate size={30} color="#fff" />
-                                                    </a>
-                                                    :
-                                                    ""
-                                            }
+                                            {member?.portfolio && (
+                                                <a
+                                                    href={member?.portfolio}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="transition-all duration-300 hover:-translate-y-1"
+                                                >
+                                                    <RiGlobalLine size={30} />
+                                                </a>
+                                            )}
+
+                                            {member?.researchGate && (
+                                                <a
+                                                    href={member?.researchGate}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="transition-all duration-300 hover:-translate-y-1"
+                                                >
+                                                    <FaResearchgate size={30} />
+                                                </a>
+                                            )}
+
                                             <a
                                                 href={member?.facebook}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
+                                                className="transition-all duration-300 hover:-translate-y-1"
                                             >
-                                                <FaSquareFacebook size={30} color="#fff" />
+                                                <FaSquareFacebook size={30} />
                                             </a>
                                         </div>
                                     </div>
