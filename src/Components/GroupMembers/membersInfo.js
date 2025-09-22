@@ -26,7 +26,7 @@ const membersInfo = [
   },
   {
     name: "Asrafuzzaman Arif ",
-    image:"https://i.ibb.co.com/wNbbTj4S/arif.png",
+    image:"https://i.ibb.co.com/ZRRD6kCZ/arif.png",
     education:"Dept. of Agricultural construction and environmental engineering, SAU",
     linkedin: "https://www.linkedin.com/in/asrafuzzaman-arif-886728173/",
     facebook: "https://www.facebook.com/Asrafuzzaman.Arif68",
@@ -34,7 +34,7 @@ const membersInfo = [
   },
   {
     name: "Shahidur Rahman",
-    image:"https://i.ibb.co.com/21L3xBPj/Shahidur-Rahman.png",
+    image:"https://i.ibb.co.com/Pv79R4c1/shahidur.png",
     education:"Dept. of Agricultural construction and environmental engineering, SAU",
     linkedin: "https://www.linkedin.com/in/shahidur-rahman-86b4731b3/",
     facebook: "https://www.facebook.com/shahidurrahman.a",
