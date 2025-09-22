@@ -1,7 +1,6 @@
 import { BiSolidCategory } from "react-icons/bi"
 import projectInfo from "./projectInfo"
 
-
 const Project = () => {
     return (
         <>
@@ -9,73 +8,51 @@ const Project = () => {
                 <h1
                     data-aos="fade-down"
                     className="text-3xl font-bold">Projects</h1>
-
                 {/* project */}
-                <div className="flex flex-col gap-5 flex-wrap mt-7">
+                <div className="grid gap-3 mt-7">
                     {
                         projectInfo?.map((project, index) =>
                             <>
-                                <div
-                                    data-aos="fade-right"
-                                    key={index}
-                                    className="w-full bg-dark_green rounded-xl py-3 px-5"
-                                >
-                                    <div className="flex items-center justify-between py-3">
-                                        <div className="w-auto">
-                                            <div className="flex gap-2 items-center">
-                                                <div className="w-auto">
-                                                    <div className="avatar">
-                                                        <div className="w-16 rounded-xl border border-dark_green">
-                                                            <img src={project?.image} />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="w-auto p-2 space-y-1">
-                                                    <h3 className="flex items-center gap-1 text-xs font-medium text-textSmallGray">
-                                                        <BiSolidCategory
-                                                            title="category"
-                                                            className="text-gray-400"
-                                                            style={{ width: "12px", height: "12px" }}
-                                                        />
-                                                        <span className="text-gray-400">{project?.category}</span>
-                                                    </h3>
-                                                    {
-                                                        project?.link ?
-                                                            <>
-                                                                <a title="See Details" href={project?.link} target="_blank">
-                                                                    <h2 className="text-base font-semibold my-1">
-                                                                        {project?.title}
-                                                                    </h2>
-                                                                </a>
-                                                            </>
-                                                            :
-                                                            <>
-                                                                <h2 className="text-base font-semibold my-1">
-                                                                    {project?.title}
-                                                                </h2>
-                                                            </>
-                                                    }
-                                                    <p className="text-base text-gray-400">
-                                                        {project?.description}
-                                                    </p>
-                                                </div>
+                                <div data-aos="fade-right" key={index} className="flex flex-col justify-start">
+                                    <div
+                                        className="relative w-full flex flex-col md:flex-row md:space-x-2 space-y-3 p-3 rounded-xl shadow-lg border border-dark_green bg-dark_green">
+                                        <div className="p-2 sm:w-1/2">
+                                            <img className="rounded-xl object-cover w-full h-full" src={project?.image} alt="image" />
+                                        </div>
+                                        <div className="w-full md:w-2/3 h-full flex flex-col p-3 space-y-2">
+                                            <div className="flex items-center">
+                                                <BiSolidCategory title="category" className="text-textSmallGray" style={{ width: '20px', height: '20px' }} />
+                                                <span href="#" className="mx-2 text-sm text-gray-400 font-medium">{project?.category}</span>
+                                            </div>
+                                            {
+                                                project?.link ?
+                                                    <>
+                                                        <a href={project.link}>
+                                                            <h3 className="text-base">{project?.title}</h3>
+                                                        </a>
+                                                    </>
+                                                    :
+                                                    <>
+                                                        <h3 className="text-base">{project?.title}</h3>
+                                                    </>
+                                            }
+                                            <p className="text-base text-gray-400">{project?.description}</p>
+
+                                            <div className="self-end">
+                                                {
+                                                    project?.link ?
+                                                        <>
+                                                            <a href={project?.link} target="_blank">
+                                                                <button className="projectBtn">
+                                                                    <span>See Project</span>
+                                                                </button>
+                                                            </a>
+                                                        </>
+                                                        :
+                                                        <></>
+                                                }
                                             </div>
                                         </div>
-
-                                        {/* new */}
-                                        {
-                                            project?.link ?
-                                                <>
-                                                    <a href={project?.link} target="_blank">
-                                                        <button className="projectBtn">
-                                                            <span>See Project</span>
-                                                        </button>
-                                                    </a>
-                                                </>
-                                                :
-                                                <></>
-                                        }
-
                                     </div>
                                 </div>
                             </>
