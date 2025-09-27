@@ -1,7 +1,7 @@
 const contactInfo = [
   {
     name: "🖂 Email",
-    info: "nafisaali610@gmail.com",
+    info: "izlalsaif@gmail.com",
   },
   //   {
   //     name: "LinkedIn",
@@ -15,11 +15,11 @@ const contactInfo = [
   // },
   {
     name: "☏ Phone",
-    info: "01880857540",
+    info: "01916153444",
   },
   {
     name: "⚲ Location",
-    info: "Mirpur,Dhaka,Bangladesh",
+    info: "Dhaka,Bangladesh",
   },
 ];
 
